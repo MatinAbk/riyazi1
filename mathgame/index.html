@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خوش آمدید به فرار از مدرسه</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="menu-body">
+
+    <div class="menu-container">
+        <h1 class="game-title">🏫 فرار از مدرسه اسرارآمیز ریاضی</h1>
+        <p class="welcome-text">آماده‌ای برای حل معماها و فرار کنی؟</p>
+
+        <div class="menu-buttons">
+            <button id="start" class="main-btn" onclick="startGame()">🚀 شروع بازی</button>
+            <button class="main-btn secondar-btn" onclick="showHelp()">📖 راهنما</button>
+            <button clas="main-btn exit-btn" onclick="exitGame()">❌ خروج</button>
+        </div>
+    </div>
+
+    <script>
+        function startGame() {
+            // رفتن به صفحه اتاق اول
+            window.location.href = "room1.html";
+        }
+
+        function showHelp() {
+            alert("راهنما: برای فرار از هر اتاق، باید پاسخ صحیح معادلات ریاضی را انتخاب کنی. دقت کن که هر اشتباه ممکن است وقتت را بگیرد!");
+        }
+
+        function exitGame() {
+            alert("بازی بسته می‌شود... تا دیدار دوباره!");
+            // در مرورگر واقعی خروج از تب امکان‌پذیر نیست، اما این پیام کاربر را راهنمایی می‌کند.
+        }
+    </script>
+      <footer class="footer">
+    <p>طراحی شده توسط: معصومه سادات آب خیز</p>
+</footer>
+
+ 
+
+</body>
+</html>

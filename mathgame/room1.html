@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتاق اول - اتحاد مربع</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="game-container">
+        <h1>🔐 اتاق اول - اتحاد مربع</h1>
+        <p>برای باز کردن در، پاسخ درست را انتخاب کن:</p>
+        
+        <h2>(x + 5)² = ؟</h2>
+
+        <div class="options">
+            <button onclick="check(1)">x² + 5x + 25</button>
+            <button onclick="check(2)">x² + 10x + 25</button>
+            <button onclick="check(3)">x² + 25</button>
+        </div>
+
+        <p id="result"></p>
+
+        <!-- عکس برنده -->
+        <img id="winImage" src="door.png" alt="تبریک!">
+
+        <!-- دکمه اتاق دوم (در ابتدا مخفی است) -->
+        <button id="nextRoomBtn" class="next-btn" onclick="goToRoom2()">🚀 رفتن به اتاق دوم</button>
+    </div>
+
+    <script src="script.js"></script>
+    <footer class="footer">
+    <p>طراحی شده توسط: معصومه سادات آب خیز</p>
+</footer>
+
+</body>
+</html>
